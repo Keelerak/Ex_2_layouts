@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_gray"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="250dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="@dimen/splash_screen_logo_margin_start"
+        android:layout_marginTop="@dimen/splash_screen_logo_margin_top"
+        android:layout_marginEnd="@dimen/splash_screen_logo_margin_end"
+        android:src="@drawable/icon_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/splash_screen_progressbar_margin_start"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="@dimen/splash_screen_progressbar_margin_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoView" />
+
+    <TextView
+        android:id="@+id/loadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/splash_screen_textview_margin_start"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/splash_screen_textview_margin_end"
+        android:text="@string/splash_loading_text"
+        android:theme="@style/Text_Splash_load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ImageView
+        android:id="@+id/logomssImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/splash_screen_mssimageview_margin_start"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="@dimen/splash_screen_mssimageview_margin_end"
+        android:layout_marginBottom="@dimen/splash_screen_mssimageview_margin_bottom"
+        android:src="@drawable/logo_mss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadTextView"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
