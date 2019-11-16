@@ -14,9 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            this.getSupportActionBar().hide();
-        }catch (NullPointerException e){}
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.profile_toolbar);
         setSupportActionBar(toolbar);
 
