@@ -8,7 +8,7 @@ import android.os.Handler;
 
 public class SplashActivity extends AppCompatActivity {
 
-    final int SPLASH_DELAY = 5000;
+    final int SPLASH_DELAY = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
