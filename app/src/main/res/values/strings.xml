@@ -3,7 +3,18 @@
 
     <string name="splash_loading_text">Загрузка...</string>
 
+    <string name="title_news">Новости</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_help">Помощь</string>
+    <string name="sub_title_help">Выберите категорию помощи</string>
+    <string name="title_history">История</string>
+
+
     <string name="title_profile">Профиль</string>
+
+    <string name="proile_dialog_choose_photo">Выбрать фото</string>
+    <string name="proile_dialog_take_photo">Сделать снимок</string>
+    <string name="proile_dialog_remove_photo">Удалить</string>
 
     <string name="profile_name">Константинов Денис</string>
 
