@@ -29,8 +29,8 @@ import static android.app.Activity.RESULT_OK;
 public class ProfileDialogChangePhotoFragment extends DialogFragment implements View.OnClickListener {
 
     private File photoFile;
-    final static int CAMERA_REQUEST = 1;
-    private static final int REQUEST_TAKE_PHOTO = 1;
+    //final static int CAMERA_REQUEST = 1;
+    private static final int CAMERA_REQUEST = 1;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
@@ -96,7 +96,7 @@ public class ProfileDialogChangePhotoFragment extends DialogFragment implements 
                             "com.example.ex_2_layouts.fileprovider",
                             photoFile);
                     pictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
-                    startActivityForResult(pictureIntent, REQUEST_TAKE_PHOTO);
+                    startActivityForResult(pictureIntent, CAMERA_REQUEST);
                 }
             }
         }
