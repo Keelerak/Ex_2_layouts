@@ -12,25 +12,28 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class FragSearchOnNPO extends Fragment {
+public class FragSearchOnActions extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.frag_search_on_npo, container, false);
+        return inflater.inflate(R.layout.frag_search_on_actions, container, false);
     }
+
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         ItemSearchFragmentModel itemSearchFragmentModel
                 = new ItemSearchFragmentModel();
-        RecyclerView recyclerView = view.findViewById(R.id.fragment_search_view_pager_nko_recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.fragment_search_view_pager_event_recycler_view);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext());
         ListSearchAdapter adapter = new ListSearchAdapter(itemSearchFragmentModel.ListName());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
 
-        TextView text = view.findViewById(R.id.fragment_search_view_pager_nko_fragment_text_view);
+        TextView text = view.findViewById(R.id.fragment_search_view_pager_event_fragment_text_view);
         text.setText("Ключевые слова: мастер-класс, помощь\n" +
-                "Результаты поиска: 109 мероприятий");
+                "Результаты поиска: 109  мероприятий");
     }
 }
+
+

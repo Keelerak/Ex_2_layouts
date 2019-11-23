@@ -9,11 +9,11 @@ public class ItemHelpFragmentModel {
     private int value;
     private List<ItemHelpFragmentModel> listItemHelp;
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
 
-    public int getValue(){
+    public int getValue() {
         return value;
     }
 
@@ -23,12 +23,12 @@ public class ItemHelpFragmentModel {
         this.value = value;
     }
 
-    public List<ItemHelpFragmentModel> listItemHelpData(){
+    public List<ItemHelpFragmentModel> listItemHelpData() {
         listItemHelp = new ArrayList<>();
         listItemHelp.add(new ItemHelpFragmentModel("Дети", R.drawable.child_image));
-        listItemHelp.add(new ItemHelpFragmentModel("Взрослые",  R.drawable.man_image));
-        listItemHelp.add(new ItemHelpFragmentModel("Пожилые",  R.drawable.old_image));
-        listItemHelp.add(new ItemHelpFragmentModel("Животные",  R.drawable.cat_image));
+        listItemHelp.add(new ItemHelpFragmentModel("Взрослые", R.drawable.man_image));
+        listItemHelp.add(new ItemHelpFragmentModel("Пожилые", R.drawable.old_image));
+        listItemHelp.add(new ItemHelpFragmentModel("Животные", R.drawable.cat_image));
         listItemHelp.add(new ItemHelpFragmentModel("Мероприятия", R.drawable.event_image));
 
         return listItemHelp;

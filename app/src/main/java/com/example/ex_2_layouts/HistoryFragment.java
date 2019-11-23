@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class HistoryFragment extends Fragment {
 
-    public HistoryFragment(){
+    public HistoryFragment() {
         setHasOptionsMenu(true);
     }
 
@@ -19,7 +19,7 @@ public class HistoryFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_history, container, false);
     }
 
-    public void onViewCreated(View view, Bundle saveInstanceState){
+    public void onViewCreated(View view, Bundle saveInstanceState) {
         androidx.appcompat.widget.Toolbar toolbar = view.findViewById(R.id.profile_toolbar);
 
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();

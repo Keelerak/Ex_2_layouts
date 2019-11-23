@@ -17,6 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
+
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -34,15 +35,15 @@ public class ProfileDialogChangePhotoFragment extends DialogFragment implements 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState){
+                             @Nullable Bundle savedInstanceState) {
 
         View dialogChange = inflater.inflate(R.layout.fragment_profile_dialog,
-                container,false);
-       dialogChange.findViewById(R.id.fragment_profole_dialog_choose_text).setOnClickListener(this);
-       dialogChange.findViewById(R.id.fragment_profole_dialog_camera_text).setOnClickListener(this);
-       dialogChange.findViewById(R.id.fragment_profole_dialog_remove_text).setOnClickListener(this);
+                container, false);
+        dialogChange.findViewById(R.id.fragment_profole_dialog_choose_text).setOnClickListener(this);
+        dialogChange.findViewById(R.id.fragment_profole_dialog_camera_text).setOnClickListener(this);
+        dialogChange.findViewById(R.id.fragment_profole_dialog_remove_text).setOnClickListener(this);
 
-       return dialogChange;
+        return dialogChange;
     }
 
 
@@ -66,10 +67,11 @@ public class ProfileDialogChangePhotoFragment extends DialogFragment implements 
                 break;
         }
     }
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == RESULT_OK) {
-            if(getActivity() != null) {
+            if (getActivity() != null) {
                 ImageView imageView = getActivity().findViewById(R.id.image_man_image_view);
                 Picasso.with(getContext()).load(photoFile).fit().centerCrop().into(imageView);
                 dismiss();
@@ -80,7 +82,7 @@ public class ProfileDialogChangePhotoFragment extends DialogFragment implements 
     private void takePictureIntent() {
         Intent pictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-        if(getActivity() != null) {
+        if (getActivity() != null) {
             if (pictureIntent.resolveActivity(getActivity()
                     .getPackageManager()) != null) {
                 photoFile = null;
@@ -106,7 +108,7 @@ public class ProfileDialogChangePhotoFragment extends DialogFragment implements 
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
         File image = null;
-        if(getActivity() != null) {
+        if (getActivity() != null) {
             File storageDir = getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES);
             image = File.createTempFile(
                     imageFileName,

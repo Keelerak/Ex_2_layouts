@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/profile_toolbar"
+        android:id="@+id/search_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/leaf">
+        android:background="@color/leaf"
+        >
 
 
         <LinearLayout
@@ -20,6 +23,7 @@
                 android:layout_height="wrap_content"
                 style="@style/TextTitle"
                 android:text="@string/title_search"/>
+            />
 
         </LinearLayout>
 
@@ -29,18 +33,19 @@
         android:id="@+id/fragment_search_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black_12">
+        android:background="@color/white_70"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearans">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/fragment_search_view_pager_tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/leaf"
-            />
-            <!--app:tabTextColor="@color/white_70"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearans"
+            app:tabTextColor="@color/white_70"
             app:tabSelectedTextColor="@color/white"
-            app:tabIndicatorColor="@color/ma"/>
-            -->
+            app:tabIndicatorColor="@color/macaroni_and_cheese"/>
+
 
     </androidx.viewpager.widget.ViewPager>
 

@@ -17,7 +17,7 @@ public class ProfileFragment extends Fragment {
 
     ProfileDialogChangePhotoFragment dialogChange;
 
-    public ProfileFragment(){
+    public ProfileFragment() {
         setHasOptionsMenu(true);
     }
 
@@ -25,7 +25,7 @@ public class ProfileFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
-    public void onViewCreated(View view, Bundle saveInstanceState){
+    public void onViewCreated(View view, Bundle saveInstanceState) {
         androidx.appcompat.widget.Toolbar toolbar = view.findViewById(R.id.profile_toolbar);
 
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
@@ -35,8 +35,7 @@ public class ProfileFragment extends Fragment {
         photoUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Dialog();
-                if(getActivity() != null) {
+                if (getActivity() != null) {
                     FragmentManager fragmentManager =
                             getActivity().getSupportFragmentManager();
                     dialogChange = new ProfileDialogChangePhotoFragment();
@@ -46,19 +45,12 @@ public class ProfileFragment extends Fragment {
         });
     }
 
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater){
-       // menu.clear();
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
         inflater.inflate(R.menu.edit_menu, menu);
-        super.onCreateOptionsMenu(menu,inflater);
+        super.onCreateOptionsMenu(menu, inflater);
 
     }
 
-    private void Dialog(){
-        if(getActivity() != null) {
-            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            ProfileDialogChangePhotoFragment dialogChange = new ProfileDialogChangePhotoFragment();
-            dialogChange.show(fragmentManager, "dialog");
-        }
-    }
 
 }

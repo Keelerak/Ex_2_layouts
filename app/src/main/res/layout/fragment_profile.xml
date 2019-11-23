@@ -10,6 +10,7 @@
         android:id="@+id/profile_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/TextTitle"
         android:background="@color/leaf">
 
 
@@ -21,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/TextTitle"
+
                 android:text="@string/title_profile"/>
 
         </LinearLayout>

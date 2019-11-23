@@ -31,8 +31,8 @@ public class ListHelpAdapter extends RecyclerView.Adapter<ListHelpAdapter.HelpVi
 
     @Override
     public void onBindViewHolder(HelpViewHolder holderHelp, int position) {
-       holderHelp.helpTitleTextView.setText(listItemHelp.get(position).getTitle());
-       holderHelp.helpImageView.setImageResource(listItemHelp.get(position).getValue());
+        holderHelp.helpTitleTextView.setText(listItemHelp.get(position).getTitle());
+        holderHelp.helpImageView.setImageResource(listItemHelp.get(position).getValue());
 
     }
 

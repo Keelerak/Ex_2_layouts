@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -6,6 +6,12 @@
         <item name="colorPrimary">@color/leaf</item>
         <item name="colorPrimaryDark">@color/leaf</item>
         <item name="colorAccent">@color/turtle_green</item>
+        <item name="android:queryBackground">@color/white</item>
+        <item name="android:textColorHint">@color/black_87</item>
+
+        <item name="colorControlNormal">@color/black_87</item>
+
+
     </style>
     <style name="Text_Splash_load" >
         <item name="android:layout_gravity">center_horizontal</item>
@@ -35,6 +41,11 @@
         <item name="android:textColor">@color/turtle_green</item>
     </style>
 
+    <style name="MyTabLayoutTextAppearans" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/leaf</item>
         <item name="android:textColorSecondary">@color/black_40</item>

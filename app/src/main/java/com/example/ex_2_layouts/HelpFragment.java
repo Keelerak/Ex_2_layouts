@@ -15,7 +15,7 @@ public class HelpFragment extends Fragment {
 
     RecyclerView recyclerView;
 
-    public HelpFragment(){
+    public HelpFragment() {
         setHasOptionsMenu(true);
     }
 
@@ -23,7 +23,7 @@ public class HelpFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_help, container, false);
     }
 
-    public void onViewCreated(View view, Bundle saveInstanceState){
+    public void onViewCreated(View view, Bundle saveInstanceState) {
         androidx.appcompat.widget.Toolbar toolbar = view.findViewById(R.id.profile_toolbar);
 
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
@@ -31,8 +31,8 @@ public class HelpFragment extends Fragment {
 
         ItemHelpFragmentModel itemHelpFragmentModel = new ItemHelpFragmentModel();
         recyclerView = view.findViewById(R.id.fragment_help_recycler_view);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(view.getContext(),2);
-        ListHelpAdapter helpAdapter = new  ListHelpAdapter(itemHelpFragmentModel.listItemHelpData());
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(view.getContext(), 2);
+        ListHelpAdapter helpAdapter = new ListHelpAdapter(itemHelpFragmentModel.listItemHelpData());
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(helpAdapter);
     }
