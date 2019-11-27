@@ -21,7 +21,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/TextTitle"
                 android:text="@string/title_search"/>
             />
 
@@ -34,14 +33,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white_70"
-        app:tabTextAppearance="@style/MyTabLayoutTextAppearans">
+        >
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/fragment_search_view_pager_tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/leaf"
-            app:tabTextAppearance="@style/MyTabLayoutTextAppearans"
             app:tabTextColor="@color/white_70"
             app:tabSelectedTextColor="@color/white"
             app:tabIndicatorColor="@color/macaroni_and_cheese"/>

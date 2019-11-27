@@ -13,7 +13,7 @@
         android:layout_marginEnd="@dimen/fragment_search_view_pager_nko_fragment_text_view_layout_margin_end"
         android:layout_marginBottom="@dimen/fragment_search_view_pager_nko_fragment_text_view_layout_margin_bottom"
         android:textSize="@dimen/fragment_search_view_pager_nko_fragment_text_view_text_size"
-        android:textColor="@color/black_70"
+
         android:lineSpacingExtra="@dimen/fragment_search_view_pager_nko_fragment_text_view_line_spacing_extra"/>
 
     <androidx.recyclerview.widget.RecyclerView

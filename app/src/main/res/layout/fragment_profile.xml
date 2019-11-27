@@ -10,7 +10,6 @@
         android:id="@+id/profile_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/TextTitle"
         android:background="@color/leaf">
 
 
@@ -137,7 +136,6 @@
                 android:layout_marginStart="@dimen/activity_profile_push_switch_margin_start"
                 android:layout_marginTop="@dimen/activity_profile_push_switch_margin_top"
                 android:layout_marginEnd="@dimen/activity_profile_push_switch_margin_end"
-                android:theme="@style/SwitchTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image_man_image_view"/>
