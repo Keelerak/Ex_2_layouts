@@ -68,7 +68,7 @@
     </style>
 
     <style name="HelperText.Title1">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">2sp</item>
         <item name="android:textColor">@color/black_38</item>
     </style>
 

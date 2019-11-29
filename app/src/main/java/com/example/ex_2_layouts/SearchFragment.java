@@ -37,6 +37,7 @@ public class SearchFragment extends Fragment {
     public void onViewCreated(View view, Bundle saveInstanceState) {
         androidx.appcompat.widget.Toolbar toolbar = view.findViewById(R.id.search_toolbar);
 
+
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
         if (appCompatActivity != null) appCompatActivity.setSupportActionBar(toolbar);
 
@@ -52,19 +53,18 @@ public class SearchFragment extends Fragment {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        //menu.clear();
+        menu.clear();
         inflater.inflate(R.menu.search_menu, menu);
         MenuItem item = menu.findItem(R.id.action_search);
 
-        item.setShowAsAction(MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW | MenuItem.SHOW_AS_ACTION_IF_ROOM);
-
+        //item.setShowAsAction(MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW | MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
         SearchView searchView = (SearchView) item.getActionView();
         SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
-        searchView.setIconifiedByDefault(false);
-        searchView.setBackgroundColor(Color.WHITE);
-        item.getIcon().mutate().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
+        //searchView.setIconifiedByDefault(false);
+        //searchView.setBackgroundColor(Color.WHITE);
+        //item.getIcon().mutate().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
